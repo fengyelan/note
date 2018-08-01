@@ -1,5 +1,6 @@
-###git笔记
-####查看远程分支
+### git笔记
+
+#### 查看远程分支
 ```
 git branch -r 
 ```
@@ -7,17 +8,17 @@ git branch -r
 git branch -a
 ```
 
-####如果发现查看的远程分支和git仓库里面的远程分支不同步，需要拉取远程所有分支
+#### 如果发现查看的远程分支和git仓库里面的远程分支不同步，需要拉取远程所有分支
 ```
 git fetch
 ```
 
-####在远程分支下面建立一个自己的分支
+#### 在远程分支下面建立一个自己的分支
 ```
 git checkout -b p_#43_sjHaitouActive_yl  origin/p_#43_sjHaitouActive
 ```
 
-####查看本地分支和远程分支的关系
+#### 查看本地分支和远程分支的关系
 ```
 git branch -vv
 ```
@@ -59,7 +60,7 @@ To push the current branch and set the remote as upstream, use
  yl [origin/yl] Delete common2.0
 `
 
-####本地分支和远程分支建立关联
+#### 本地分支和远程分支建立关联
 
 * 如果远程存在该分支dev-0727,建立和远程分支的关联
 
@@ -118,7 +119,7 @@ To push to the branch of the same name on the remote, use
 
 To choose either option permanently, see push.default in 'git help config'.
 ```
-#### 修改了本地代码，但是不想提交，又拉取线上的master分支，进行合并，使用stash进行暂存
+#### 修改了本地代码，但是不想提交，又拉取线上的master分支，进行合并
 * 把文件放到暂存区（ps：添加-u会把新增的文件也放入暂存区，不添加-u只会把修改的文件放入暂存区）
 
 ```
