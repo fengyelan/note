@@ -1,14 +1,13 @@
 const child_process = require("child_process");
+const tip = process.argv[2] || 'update';
 const execCMD = function(cmd){
   child_process.exec(cmd, function(error, stdout, stderr) {
     if(error) {
         console.error('error: ' + error);
         return;
     }
-    console.log('stdout: ' + stdout);
-    console.log('stderr: ' + stderr);
   })
 }
-const cmd = 'git add --all :/ && git commit -m "update" && git push origin master';
+const cmd = 'git add -A && git status && git commit -m "'+tip+'" && git push origin master';
 execCMD(cmd);
 
