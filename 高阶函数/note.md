@@ -3,14 +3,14 @@
 * 接收函数作为参数
 * 返回值是函数
 
-#####函数作为参数传递
+##### 函数作为参数传递
 * Array.prototype.map，
 * Array.prototype.filter
 * Array.prototype.reduce
 * ajax回调
 * ....
 
-#####函数作为返回值
+##### 函数作为返回值
 ```
 var isType = function(type){
     return function(obj){
@@ -41,7 +41,7 @@ console.log(str1===str2); //true
 
 
 
-####应用
+#### 应用
 ##### 面向切面编程
 
 * 让一个函数在另一个函数的之前或者之后执行
@@ -288,7 +288,7 @@ var timeChunk = function(ary,fn,count){
 
 ```
 
-#####惰性加载函数
+##### 惰性加载函数
 有些函数用到的时候只让它进行加载一次。
 比如，浏览器的兼容性导致有些方法是不一致的，所以浏览器的嗅探工作是不可避免的。
 
