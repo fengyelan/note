@@ -119,7 +119,7 @@ To push to the branch of the same name on the remote, use
 
 To choose either option permanently, see push.default in 'git help config'.
 ```
-#### 修改了本地代码，但是不想提交，又拉取线上的master分支，进行合并
+#### 修改了本地代码，但是不想提交，又拉取线上的master分支，进行合并，可以使用stash进行操作
 * 把文件放到暂存区（ps：添加-u会把新增的文件也放入暂存区，不添加-u只会把修改的文件放入暂存区）
 
 ```
@@ -132,6 +132,23 @@ git stash -u
 * `git merge master`
 * `git stash pop`
 * 这个时候有冲突的话需要处理冲突
+
+#### merge合并的话是把本地所有的文件进行合并，但是只想合并别人的一个文件怎么办？
+```
+git checkout p_#3  src/components/Sidebar/_sidebar.vue
+
+```
+ps:这种其实也不叫合并，最直接的叫法叫强制覆盖我的分支文件，这个是把p_#3分支上面的src/components/Sidebar/_sidebar.vue强行覆盖了我的分支的该文件。
+
+#### 修改分支名称
+```
+git branch -m dev-0820 p_#5
+```
+* git branch 旧分支名称 新分支名称
+
+
+
+
 
 
 

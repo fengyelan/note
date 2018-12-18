@@ -21,7 +21,7 @@ nrm ls
 ```
 #### 切换需要使用的源
 ```
-nrm use tabobao
+nrm use taobao
 ```
 
 ```
