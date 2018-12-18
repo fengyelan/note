@@ -200,7 +200,7 @@ Function.prototype.uncurrying = function(){
 }
 ```
 
-#####函数节流
+##### 函数节流
 * 原因：某些场景下函数被频繁调用，造成性能问题。例如resize，mousemove，scroll事件
 * 原理：降低函数被调用的频率
 * 实现：延时器或者时间戳 
