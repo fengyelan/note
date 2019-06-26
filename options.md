@@ -31,7 +31,4 @@
 3. 请求中的XMLHttpRequestUpload 对象注册了任意多个事件监听器。
 4. 请求中使用了ReadableStream对象。
 
-附上项目接口的截图
-![options](./images/1.png)
-![post](./images/2.png)
-![](./images/3.png)
+
